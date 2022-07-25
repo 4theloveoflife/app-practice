@@ -1,29 +1,32 @@
 body{
-  font-family:arial, sans-serif;
+  font-family: arial, sans-serif;
 }
 .weather-app-wrapper{
     max-width: 600px;
       margin: 30px auto;
 }
 .weather-app{
-  padding:20px;
-  border:2px solid #79c2d0;
-  border-radius: 10px;
+      padding: 20px;
+        border: 2px solid #79c2d0;
+        border-radius: 10px;
+        display:block
 } 
-.h1 {
+h1 {
   color:black;
       font-weight: 100;
       font-size: 20px;
         line-height: 28px;
         margin-bottom: 0;
+        display:block;
 }
-.ul{
+ul{
   margin: 0;
   padding: 0;
 }
-.li{
-  list-style:none;
-  color:black;
-  font-size:16px;
- 
+li{
+  list-style: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 19px;
 }
