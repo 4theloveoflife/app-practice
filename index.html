@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width= , initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-   <link rel="stylesheet" href="./style.css" />
+       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+       <link rel="stylesheet" href="./style.css" />
     <title>vanilla weather app</title>
 </head>
 <body style="   background: linear-gradient(120deg, #e0c3fc 0%,  #a8c6e3 100%);">
@@ -24,7 +25,7 @@
 </form>
 <div class="row">
 <div class="col-6">
-<h1 id="city"> Tokyo</h1>
+<h1 id="city"></h1>
 <ul>
 <li id="date"> Tuesday 22:32</li>
 <li  id="description"> Cloudy </li>
@@ -38,19 +39,22 @@
 src= "images/RainingSun.jpg" alt="rain and sunny"
 class="float-left"
 />
-        <strong  id="currentTemperature"> 21</strong>
-     <span class="units">
+<div  class="float-left" id="currentTemperature"> <strong></strong>      
+<span class="units">
         <a href="#" id="celsius-link">°C</a> /
         <a href="#" id="fahrenheit-link"> °F</a>
 </span>
+</div>
+</div>
+</div>
         <ul>
-    <li id="humidity">Humidity💧  %</li> 
-    <li id="windspeed">Wind🌬️   km/h</li>
+    <li>Humidity:💧<span id="humidity">
+    </span>%
+    </li> 
+    <li> Wind:🌬️ <span id="wind">  
+        </span>km/h
+    </li>
 </ul>
-    </div>
-    </div>
-    </div>
-    </div>
 <div class="row  row-cols-5">
     <div class="col" class="days">
         <p id="emoji">☀️</p>
@@ -79,10 +83,11 @@ class="float-left"
     </div>
     </div>
     </div>
-</div>
-</div>
 <a href="https://github.com/4theloveoflife/app-practice.git" target="_blank">open-sourced</a> coded by
 Tiffany Walker
-    <script src="src/app.js"></script>
+</div>
+</div>
+    <script src="app.js">
+ </script>
 </body>
 </html>
