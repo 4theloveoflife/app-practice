@@ -45,8 +45,19 @@ iconElement.setAttribute(
 iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
+function search (city) {
 let apiKey= "eada887ccbd6462c016357c4150a3af7";
-let city="Los Angeles";
 let apiUrl= `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-
 axios.get(apiUrl).then(displayTemperature);
+}
+
+function handleSubmit(event){
+    event.preventDefault();
+    let searchInputElement= document.querySelector("#search-input");
+    search(searchInputElement.value);
+}
+
+search("Tokyo");
+
+let form= document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
