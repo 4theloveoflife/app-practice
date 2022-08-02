@@ -23,11 +23,6 @@
     <input type="submit" 
     value="search"
      />
-    <button type="button" 
-    class="btn btn-primary" 
-    id="current-location-button">
-        Current
-    </button>
 </form>
 <div class="overview">
 <div class="row">
@@ -39,16 +34,16 @@
 </ul>
 </div>
 </div>
-
+<div class="row">
 <div class="col-6">
-    <div class="clearfix weather-temperature">
+    <div class="d-inline-flex p-2 weather-temperature">
 <img
 src= ""
  alt="cloudy"
  id="icon"
 class="float-left"
 />
-<div  class="float-left">
+<div class="float-left">
  <strong  id="currentTemperature"> </strong>      
 <span class="units">
         <a href="#" id="celsius-link" class="active">°C</a> /
@@ -57,6 +52,7 @@ class="float-left"
 </div>
 </div>
 </div>
+<div class="col-3">
         <ul>
     <li>Humidity:💧<span id="humidity">
     </span>%
@@ -65,36 +61,14 @@ class="float-left"
         </span>km/h
     </li>
 </ul>
-<div class="row  row-cols-5">
-    <div class="col" class="days">
-        <p id="emoji">☀️</p>
-        <p>23°C</p>
-        <p>Tuesday</p>
-    </div>
-    <div class="col" class="days">
-        <p id="emoji">☀️</p>
-        <p>23°C</p>
-        <p>Wednesday</p>
-    </div>
-    <div class="col" class="days">
-        <p id="emoji">⛅</p>
-        <p>18°C</p>
-        <p>Thursday</p>
-    </div>
-    <div class="col" class="days">
-        <p id="emoji">🌥️</p>
-        <p>16°C</p>
-        <p>Friday</p>
-    </div>
-    <div class="col" class="days">
-        <p id="emoji">🌤️</p>
-        <p>17°C</p>
-        <p>Saturday</p>
-    </div>
-    </div>
-    </div>
+</div>
+</div>
+</div>
+</div>
+    <small>
 <a href="https://github.com/4theloveoflife/app-practice.git" target="_blank">open-sourced</a> coded by
 Tiffany Walker
+</small>
 </div>
 </div>
     <script src="app.js">
