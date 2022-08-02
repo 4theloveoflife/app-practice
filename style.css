@@ -47,12 +47,21 @@ li first-letter{
   width:64px;
 }
 .currentTemperature{
+  color:black;
   font-weight: bold;
   line-height: 1;
   font-size: 64px;
 }
-.currrentTemperature .units{
+
+.weather-temperature .units{
   position: relative;
   font-size: 16px;
-  top:-34px;
+  top:-30px;
 }
+
+.weather-temperature .active {
+  color: black;
+  cursor: default;
+  text-decoration: none;
+}
+
